@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小天使的魔法卷发棒</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 使用 Inter 字体作为网页的默认字体 */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA; /* 柔和的背景色 */
+        }
+        /* 自定义渐变背景，用于强调部分 */
+        .gradient-bg {
+            background: linear-gradient(135deg, #FBCFE8 0%, #D8B4FE 100%); /* 浅粉到浅紫的渐变 */
+        }
+        /* 提升卡片的视觉效果 */
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(216, 180, 254, 0.4);
+        }
+    </style>
+</head>
+<body class="text-stone-700">
+
+    <!-- 导航栏 -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-pink-500">
+                <span class="inline-block transform rotate-[-10deg] mr-1 text-3xl">✨</span>天使美发工坊
+            </div>
+            <!-- 桌面端导航链接 -->
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#story" class="hover:text-pink-500 transition duration-300">我们的故事</a>
+                <a href="#wand" class="hover:text-pink-500 transition duration-300">魔法工具</a>
+                <a href="#process" class="hover:text-pink-500 transition duration-300">变身步骤</a>
+                <a href="#gallery" class="hover:text-pink-500 transition duration-300">成果展示</a>
+            </nav>
+            <!-- 移动端菜单按钮 (目前只是占位符，不实现功能) -->
+            <button class="md:hidden p-2 rounded-lg text-stone-600 hover:bg-gray-100 transition">
+                <!-- 汉堡菜单图标 -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. 英雄/主视觉部分 -->
+    <section id="hero" class="gradient-bg py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- 左侧文本内容 -->
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+                    小天使的<br class="hidden md:inline">
+                    <span class="bg-amber-400 px-3 py-1 rounded-xl shadow-lg inline-block mt-2">魔法卷发</span>
+                </h1>
+                <p class="mt-6 text-xl text-pink-100 max-w-lg mx-auto md:mx-0">
+                    为颖子带来一头闪耀的卷发，让每一根发丝都充满灵动与自信。这不是造型，是蜕变！
+                </p>
+                <button class="mt-8 px-8 py-3 bg-white text-pink-600 font-bold rounded-full shadow-xl hover:bg-pink-50 transition duration-300 transform hover:scale-105">
+                    立即预约变美体验
+                </button>
+            </div>
+            <!-- 右侧图片占位符 -->
+            <div class="md:w-5/12">
+                <!-- 占位符图片，用于描绘小天使和颖子 -->
+                <img src="https://placehold.co/600x450/F06292/FFFFFF?text=Angel+Styling+Yingzi"
+                     alt="小天使正在用卷发棒给颖子做头发的插画"
+                     class="w-full h-auto rounded-3xl shadow-2xl card-shadow object-cover"
+                     onerror="this.src='https://placehold.co/600x450/F06292/FFFFFF?text=天使为颖子造型';"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 我们的故事/愿景 -->
+    <section id="story" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-purple-600">一切从一个愿望开始</h2>
+            <p class="text-lg max-w-3xl mx-auto mb-12 text-stone-600">
+                颖子一直梦想着拥有如云朵般轻盈、如流水般灵动的卷发。于是，带着光芒的小天使降临，带来了她独有的“星辰卷发棒”，开启了这场浪漫的发型之旅。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 故事卡片 1 -->
+                <div class="p-6 rounded-xl border border-pink-100 shadow-md transition duration-300 hover:shadow-lg hover:bg-pink-50">
+                    <div class="text-4xl mb-3 text-amber-500">🌟</div>
+                    <h3 class="text-xl font-semibold mb-2">独家秘法</h3>
+                    <p>结合天使的温柔手法与现代科技，确保发丝零损伤，卷度持久。</p>
+                </div>
+                <!-- 故事卡片 2 -->
+                <div class="p-6 rounded-xl border border-pink-100 shadow-md transition duration-300 hover:shadow-lg hover:bg-pink-50">
+                    <div class="text-4xl mb-3 text-amber-500">💖</div>
+                    <h3 class="text-xl font-semibold mb-2">心灵感应</h3>
+                    <p>小天使能读懂颖子的心声，设计出最符合她气质和个性的完美卷发。</p>
+                </div>
+                <!-- 故事卡片 3 -->
+                <div class="p-6 rounded-xl border border-pink-100 shadow-md transition duration-300 hover:shadow-lg hover:bg-pink-50">
+                    <div class="text-4xl mb-3 text-amber-500">👑</div>
+                    <h3 class="text-xl font-semibold mb-2">自信加冕</h3>
+                    <p>完成后的卷发自带光环，让颖子无论走到哪里都成为焦点。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 魔法工具介绍 (卷发棒) -->
+    <section id="wand" class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- 左侧图片占位符 -->
+            <div class="md:w-5/12 mb-10 md:mb-0">
+                <!-- 占位符图片，用于描绘卷发棒 -->
+                <img src="https://placehold.co/500x500/F9A8D4/FFFFFF?text=Magical+Curling+Wand"
+                     alt="星辰卷发棒的特写"
+                     class="w-full h-auto rounded-full shadow-2xl card-shadow object-cover"
+                     onerror="this.src='https://placehold.co/500x500/F9A8D4/FFFFFF?text=魔法卷发棒';"
+                >
+            </div>
+            <!-- 右侧文本内容 -->
+            <div class="md:w-1/2 text-center md:text-left text-white">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">星辰卷发棒</h2>
+                <p class="text-lg mb-6 max-w-lg mx-auto md:mx-0 opacity-90">
+                    这不是普通的卷发工具，它是用天使的羽毛和流星的碎片打造而成。它能精确控制温度，释放微小的光子，修复和滋养每一根发丝。
+                </p>
+                <ul class="space-y-3 text-left inline-block md:block">
+                    <li class="flex items-start">
+                        <span class="text-amber-300 text-2xl mr-3">✓</span>
+                        <span class="opacity-90">羽毛轻触：不伤发质，如丝般顺滑。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-300 text-2xl mr-3">✓</span>
+                        <span class="opacity-90">流星持久：卷度锁定，24小时不塌。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-300 text-2xl mr-3">✓</span>
+                        <span class="opacity-90">香气注入：完成时带有淡淡的花香。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 变身步骤/流程 -->
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-purple-600">颖子变身三部曲</h2>
+
+            <div class="relative max-w-4xl mx-auto">
+                <!-- 流程线 (仅在桌面端显示) -->
+                <div class="hidden md:block absolute top-1/4 left-0 right-0 h-1 bg-pink-200 z-0"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- 步骤 1: 准备 -->
+                    <div class="relative z-10 p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-400 card-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-pink-500 text-white rounded-full text-xl font-bold">1</div>
+                        <h3 class="text-2xl font-semibold mb-2 text-pink-600">温柔唤醒</h3>
+                        <p class="text-stone-600">
+                            小天使首先用温和的光芒为颖子的秀发注入活力，进行基础滋养和梳理。
+                        </p>
+                    </div>
+
+                    <!-- 步骤 2: 施法 -->
+                    <div class="relative z-10 p-6 bg-white rounded-xl shadow-lg border-t-4 border-purple-400 card-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-purple-500 text-white rounded-full text-xl font-bold">2</div>
+                        <h3 class="text-2xl font-semibold mb-2 text-purple-600">魔法卷发</h3>
+                        <p class="text-stone-600">
+                            精准控制星辰卷发棒的温度，将发丝分层，打造自然且富有层次感的波浪卷。
+                        </p>
+                    </div>
+
+                    <!-- 步骤 3: 完美定型 -->
+                    <div class="relative z-10 p-6 bg-white rounded-xl shadow-lg border-t-4 border-amber-400 card-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-amber-500 text-white rounded-full text-xl font-bold">3</div>
+                        <h3 class="text-2xl font-semibold mb-2 text-amber-600">光环加持</h3>
+                        <p class="text-stone-600">
+                            最后，小天使轻轻扇动翅膀，为卷发喷洒定型雾，保持卷度完美，并增添闪耀光泽。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 成果展示/画廊 -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-pink-600">颖子：闪耀蜕变</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- 图片 1: 造型前 -->
+                <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
+                    <!-- 占位符图片 -->
+                    <img src="https://placehold.co/400x500/FEE2E2/B91C1C?text=Before+Yingzi"
+                         alt="颖子造型前的照片"
+                         class="w-full h-72 object-cover"
+                         onerror="this.src='https://placehold.co/400x500/FEE2E2/B91C1C?text=造型前';"
+                    >
+                    <p class="p-3 bg-white text-sm font-medium text-stone-500">造型前 (自然)</p>
+                </div>
+
+                <!-- 图片 2: 变身中 -->
+                <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
+                    <!-- 占位符图片 -->
+                    <img src="https://placehold.co/400x500/F0F9FF/2563EB?text=Curling+Process"
+                         alt="正在卷发中的颖子侧面照"
+                         class="w-full h-72 object-cover"
+                         onerror="this.src='https://placehold.co/400x500/F0F9FF/2563EB?text=卷发中';"
+                    >
+                    <p class="p-3 bg-white text-sm font-medium text-stone-500">变身中 (期待)</p>
+                </div>
+
+                <!-- 图片 3: 柔和卷 -->
+                <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
+                    <!-- 占位符图片 -->
+                    <img src="https://placehold.co/400x500/F3E8FF/7C3AED?text=After+Soft+Curls"
+                         alt="颖子完成后的柔和卷发"
+                         class="w-full h-72 object-cover"
+                         onerror="this.src='https://placehold.co/400x500/F3E8FF/7C3AED?text=完成后-柔和卷';"
+                    >
+                    <p class="p-3 bg-white text-sm font-medium text-purple-600">成果 (柔和波浪)</p>
+                </div>
+
+                <!-- 图片 4: 丰盈卷 -->
+                <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
+                    <!-- 占位符图片 -->
+                    <img src="https://placehold.co/400x500/FFFBEB/D97706?text=After+Voluminous+Curls"
+                         alt="颖子完成后的丰盈卷发"
+                         class="w-full h-72 object-cover"
+                         onerror="this.src='https://placehold.co/400x500/FFFBEB/D97706?text=完成后-丰盈卷';"
+                    >
+                    <p class="p-3 bg-white text-sm font-medium text-amber-600">成果 (丰盈空气感)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 呼吁行动/行动号召 (Call to Action) -->
+    <section class="py-16 bg-pink-50 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-pink-600">你也想拥有天使的魔法吗？</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8 text-stone-600">
+                无论是甜美浪漫，还是慵懒随性，小天使都能为你量身定制。现在就开启你的变美之旅吧！
+            </p>
+            <button class="px-10 py-4 bg-purple-500 text-white font-bold text-lg rounded-full shadow-2xl hover:bg-purple-600 transition duration-300 transform hover:scale-105">
+                立即联系小天使
+            </button>
+        </div>
+    </section>
+
+    <!-- 7. 页脚 -->
+    <footer class="bg-stone-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm opacity-80">
+            <p>&copy; 2025 天使美发工坊。保留所有魔法权利。</p>
+            <p class="mt-2">魔法热线：400-天使-美发 | 邮箱：angel@magicwand.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
